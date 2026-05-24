@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<link href="clocked.css" rel="stylesheet">
+<html>
+    <title>Watchman Form</title>
+    <link rel="icon" href="clockedpng.png">
+
+<body class="form-body">
+
+    <div class="logo-wrapper logo-small" id="clocked-logo">
+        <!-- <a href="clocked.html"><span class="logo-text">CL</span></a>
+        <a href="clocked.html"><img src="clockedtitle.png" class="logo-o" /></a>
+        <a href="clocked.html"><span class="logo-text">CKED</span></a> -->
+    </div>
+
+    <div id="form-section">
+    <form id="watchman-form">
+        <a href="clocked.html"><img src="clockedlogo.png" class="home-clocked"></a>
+
+    <div class="form-folder">
+        <div class="form-folder-tab">WATCHMAN FORM</div>
+        <div class="form-folder-body">
+            <div class="form-box">
+
+
+                <div class="client-info">
+                    <div class="client-info-title">
+                        <div class="num">01</div>
+                        <p class="client-title">CLIENT INFORMATION</p>
+                    </div>
+                    <div class="client-input">
+                        <div>
+                            <p>CLIENT CODE NAME <span class="required">*</span></p>
+                            <input type="text" id="clientName" class="clientInput" placeholder="Your alias or handle" required>
+                        </div>
+                        <div>
+                            <p>CONTACT EMAIL <span class="required">*</span></p>
+                            <input type="email" id="clientEmail" placeholder="Where we reach you" class="clientInput" required>
+                        </div>     
+                    </div>
+                    <input type="checkbox" id="anonymous" class="tickbox"><span class="anontext">Remain Anonymous - my identity will not be disclosed to the assigned operative</span>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">02</div>
+                        <p class="client-title">SELECT OPERATION</p>
+                    </div>
+
+                    <div class="operation-grid">
+                         <div class="operation-card" id="w01">
+                            <span class="op-code">W-01</span>
+                            <p class="op-title">SURVEILLANCE</p>
+                            <p class="op-desc">Continuous tracking of a target's movements, patterns, and contacts</p>
+                         </div>
+                         <div class="operation-card" id="w02">
+                            <span class="op-code">W-02</span>
+                            <p class="op-title">RECONNAISSANCE</p>
+                            <p class="op-desc">Full location scouting and layout mapping prior to an operation</p>
+                         </div>
+                         <div class="operation-card" id="w03">
+                            <span class="op-code">W-03</span>
+                            <p class="op-title">INTEL EXTRACTION</p>
+                            <p class="op-desc">Recovery of classified information, identities, or documents</p>
+                         </div>
+                         <div class="operation-card" id="w04">
+                            <span class="op-code">W-04</span>
+                            <p class="op-title">INTEL EXTRACTION</p>
+                            <p class="op-desc">Extended observation over multiple cycles, weekly reports delivered</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">03</div>
+                        <p class="client-title">TARGET INFORMATION</p>
+                    </div>
+                    
+                    <div class="two-column-grid">
+                        <div>
+                            <p>SUBJECT NAME <span class="required">*</span></p>
+                            <input type="text" id="subjectName" class="clientInput" required placeholder="Full name or known alias">
+                        </div>
+                        <div>
+                            <p>SUBJECT PHOTO</p>
+                            <label for="myfile" class="clientInput file-label">
+                                <span id="file-text">Choose a file...</span>
+                            </label>
+                            <input type="file" id="myfile" name="myfile" style="display:none">
+                        </div>   
+                        <div>
+                            <p>CITY / REGION <span class="required">*</span></p>
+                            <input type="text" id="cityRegion" class="clientInput" required placeholder="Last known location">
+                        </div> 
+                        <div>
+                            <p>SPECIFIC AREA</p>
+                            <input type="text" id="specificArea" class="clientInput" placeholder="Neighborbood, landmarkr...">
+                        </div> 
+                        <div>
+                            <p>WORKPLACE/COMMON AREA</p>
+                            <input type="text" id="commonArea" class="clientInput" placeholder="Office, school, establishment...">
+                        </div> 
+                        <div>
+                            <p>USUAL SCHEDULE</p>
+                            <input type="text" id="schedule" class="clientInput" placeholder="e.g. Mon-Fri 9am-6pm...">
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">04</div>
+                        <p class="client-title">URGENCY LEVEL</p>
+                    </div>
+
+                    <p class="question">HOW SOON DO YOU NEED THIS DONE? <span class="required">*</span></p>
+                    <div class="urgency">
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio" required>
+                            <span class="urgency-text">Standard — Assigned within standard queue</span>
+                            <span class="urgency-price">Base price</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio">
+                            <span class="urgency-text">Priority — Expedited assignment and preparation</span>
+                            <span class="urgency-price">+ ₱50,000</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio">
+                            <span class="urgency-text">Immediate — Fastest available deployment</span>
+                            <span class="urgency-price">+ ₱120,000</span>
+                        </label>
+                    </div>
+
+                    
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">05</div>
+                        <p class="client-title">MISSION OBJECTIVE</p>
+                    </div>
+                    <div class="urgency-box">
+
+                    <div>
+                        <p>OBJECTIVE<span class="required">*</span></p>
+                        <textarea  class="clientInputt text-area" required placeholder="What do you need confirmed, documented, or recovered? Be specific - vague objectives may result in incomplete reports."></textarea>
+                    </div>
+                    <div>
+                        <p>SPECIAL INSTRUCTIONS<span class="required">*</span></p>
+                        <textarea  class="clientInputt text-area" required placeholder="Any constraints, sensitivities, or specific methods to avoid ..."></textarea>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="client-info2">
+                    <div class="client-info-title">
+                        <div class="num">06</div>
+                        <p class="client-title">PAYMENT INFORMATION</p>
+                    </div>
+                    
+                    <div class="payment-box">
+                        <p class="how-it-works">HOW IT WORKS</p>
+
+                        <div class="payment-step">
+                            <div class="numPay">01</div>
+                            <div class="step-content">
+                                <p class="step-title">SUBMIT THE FORM</p>
+                                <p class="step-desc">Your briefing is encrypted and sent to the agency for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">02</div>
+                            <div class="step-content">
+                                <p class="step-title">AGENCY REVIEWS</p>
+                                <p class="step-desc">Threat level, duration, and operational risk are assessed.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">03</div>
+                            <div class="step-content">
+                                <p class="step-title">OFFICIAL QUOTATION SENT</p>
+                                <p class="step-desc">You receive a <strong>Mission Approved — Final Quote</strong> with total cost and 50% downpayment amount.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">04</div>
+                            <div class="step-content">
+                                <p class="step-title">50% DOWNPAYMENT</p>
+                                <p class="step-desc">Mission preparation begins only after payment is received.</p>
+                                <div class="payment-methods">
+                                    <span>CASH</span>
+                                    <span>BANK TRANSFER</span>
+                                    <span>GCASH</span>
+                                    <span>PAYPAL</span>
+                                    <span>CRYPTO</span>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">05</div>
+                            <div class="step-content">
+                                <p class="step-title">REMAINING 50% ON COMPLETION</p>
+                                <p class="step-desc">Collected before report delivery or any results are released.</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext">I understand that payment is required before mission preparation begins <span class="required">*</span></span>
+                </div>
+
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn" data-prefix="WCH">
+                        TRANSMIT WATCHMAN BRIEFING &nbsp;&#8594;
+                    </button>
+                    <p class="submit-note">You will be contacted via your provided email within 24–48 hours.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+    <div id="success-section" style="display:none;">
+
+        <div class="success-wrap">
+
+            <p class="confirmed-title">TRANSMISSION CONFIRMED</p>
+            <p class="case-id">CASE ID: <span id="caseId"></span></p>
+
+            <hr class="divider">
+
+            <ul class="status-lines">
+                <li class="status-line" id="s1">
+                    <span class="check">&#10003;</span>
+                    <span class="label">ENCRYPTION:</span>
+                    <span class="val">ACTIVE</span>
+                </li>
+                <li class="status-line" id="s2">
+                    <span class="check">&#10003;</span>
+                    <span class="label">BRIEFING:</span>
+                    <span class="val">RECEIVED</span>
+                </li>
+                <li class="status-line" id="s3">
+                    <span class="check">&#10003;</span>
+                    <span class="label">AGENT ASSIGNED:</span>
+                    <span class="val">PENDING</span>
+                </li>
+            </ul>
+
+            <hr class="divider">
+            <p class="note">You will be contacted via your provided email within 24–48 hours.</p>
+            <button class="return-btn"><a href="clocked.html">← RETURN TO HOME</a></button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
