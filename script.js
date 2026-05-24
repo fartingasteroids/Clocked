@@ -16,7 +16,7 @@ document.addEventListener("keydown", function(e) {
 const folderBody = document.querySelector('.folder-body');
 const folderTab = document.querySelector('.folder-tab');
 
-const BODY_H = 580;
+const BODY_H = 540;
 const TAB_H  = 70;
 
 const closedPos = {
