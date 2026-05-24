@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<link href="clocked.css" rel="stylesheet">
+<html>
+    <title>Watchman Form</title>
+    <link rel="icon" href="clockedpng.png">
+
+<body class="form-body">
+
+    <div class="logo-wrapper logo-small" id="clocked-logo">
+        <!-- <a href="clocked.html"><span class="logo-text">CL</span></a>
+        <a href="clocked.html"><img src="clockedtitle.png" class="logo-o" /></a>
+        <a href="clocked.html"><span class="logo-text">CKED</span></a> -->
+    </div>
+
+    <div id="form-section">
+        <form id="reaper-form">
+            <a href="clocked.html"><img src="clockedlogo.png" class="home-clocked"></a>
+
+    <div class="form-folder">
+        <div class="form-folder-tab">REAPER FORM</div>
+        <div class="form-folder-body">
+            <div class="form-box">
+
+
+                <div class="client-info">
+                    <div class="client-info-title">
+                        <div class="num">01</div>
+                        <p class="client-title">CLIENT INFORMATION</p>
+                    </div>
+                    <div class="client-input">
+                        <div>
+                            <p>CLIENT CODE NAME <span class="required">*</span></p>
+                            <input type="text" id="clientName" class="clientInput" required placeholder="Your alias or handle">
+                        </div>
+                        <div>
+                            <p>CONTACT EMAIL <span class="required">*</span></p>
+                            <input type="email" id="clientEmail" required placeholder="Where we reach you" class="clientInput">
+                        </div>     
+                    </div>
+                    <input type="checkbox" id="anonymous" class="tickbox"><span class="anontext">Remain Anonymous - my identity will not be disclosed to the assigned operative</span>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">02</div>
+                        <p class="client-title">SELECT OPERATION</p>
+                    </div>
+
+                    <div class="operation-grid">
+                         <div class="operation-card" id="w01">
+                            <span class="op-code">R-01</span>
+                            <p class="op-title">INTERFERENCE</p>
+                            <p class="op-desc">Targeted disruption or sabotage of an operation, event, or structure</p>
+                            <p class="op-price">₱350,000 BASE</p>
+                         </div>
+                         <div class="operation-card" id="w02">
+                            <span class="op-code">R-02</span>
+                            <p class="op-title">RECONNAISSANCE</p>
+                            <p class="op-desc">Physical recovery of a high-value object, document, or individual</p>
+                            <p class="op-price">₱500,000 BASE</p>
+                         </div>
+                         <div class="operation-card" id="w03">
+                            <span class="op-code">R-03</span>
+                            <p class="op-title">EXTRACTION</p>
+                            <p class="op-desc">Covert removal of a designated individual from a controlled environment</p>
+                            <p class="op-price">₱750,000 BASE</p>
+                         </div>
+                         <div class="operation-card" id="w04">
+                            <span class="op-code">R-04</span>
+                            <p class="op-title">ELIMINATION</p>
+                            <p class="op-desc">Permanent removal of a designated target. Subject to internal vetting.</p>
+                            <p class="op-price">₱2,500,000 BASE</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">03</div>
+                        <p class="client-title">TARGET INFORMATION</p>
+                    </div>
+
+                    <div class="two-column-grid">
+                        <div>
+                            <p>TARGET NAME <span class="required">*</span></p>
+                            <input type="text" id="subjectName" class="clientInput" required placeholder="Full name or known alias">
+                        </div>
+                        <div>
+                            <p>TERRITORY/LOCATION <span class="required">*</span></p>
+                            <input type="text" id="subjectName" class="clientInput" required placeholder="City, region, or territory...">
+                        </div>
+
+                    </div>
+
+                    <div class="classification-box">
+                    <p class="question">TARGET CLASSIFICATION <span class="required">*</span></p>
+                    <div class="urgency">
+                        <label class="urgency-row">
+                            <input type="radio" name="classification" class="urgency-radio" required>
+                            <span class="urgency-text">Tier I - Standard Target</span>
+                            <span class="urgency-price">Base rate</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="classification" class="urgency-radio">
+                            <span class="urgency-text">Tier II - Elevated Target</span>
+                            <span class="urgency-price">+ ₱50,000</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="classification" class="urgency-radio">
+                            <span class="urgency-text">Apex Threat - High-Value Threat</span>
+                            <span class="urgency-price">Custom Quote</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="classification" class="urgency-radio">
+                            <span class="urgency-text">Unknwon - Requires Agency Assessment</span>
+                            <span class="urgency-price">Eval Fee ₱15,000</span>
+                        </label>
+                    </div>
+
+                    <div class="urgency-box">
+
+                    <div>
+                        <p>THREAT ASSESSMENT NOTES</p>
+                        <textarea  class="clientInputt text-area" placeholder="Known habits, companions, capabilities, weapons, security detail, behavorial pattern"></textarea>
+                    </div>
+
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">04</div>
+                        <p class="client-title">MISSION PARAMETERS</p>
+                    </div>
+
+                    <p class="question">URGENCY LEVEL <span class="required">*</span></p>
+                    <div class="urgency">
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio" required>
+                            <span class="urgency-text">Standard — Assigned within standard queue</span>
+                            <span class="urgency-price">Base price</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio">
+                            <span class="urgency-text">Priority — Expedited assignment and preparation</span>
+                            <span class="urgency-price">+ ₱200,000</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="urgency" class="urgency-radio">
+                            <span class="urgency-text">Immediate — Fastest available deployment</span>
+                            <span class="urgency-price">+ ₱500,000</span>
+                        </label>
+
+                        <p class="question">PREFERRED METHOD <span class="required">*</span></p>
+                    
+                        <label class="urgency-row">
+                            <input type="radio" name="method" class="urgency-radio" required>
+                            <span class="urgency-text">Silent Operation — no trace, no presence detected/span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="method" class="urgency-radio">
+                            <span class="urgency-text">Direct Confrontation — open engagement authorized</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="method" class="urgency-radio">
+                            <span class="urgency-text">Strategic Trap — lure and contain</span>
+                        </label>
+                        <label class="urgency-row">
+                            <input type="radio" name="method" class="urgency-radio">
+                            <span class="urgency-text">Agency Discretion — operative determines best approach</span>
+                        </label>
+                    </div>
+
+                    <div class="specialMethod-box">
+
+                    <div>
+                        <p>ADDITIONALREQUESTS/SPECIAL METHOD</p>
+                        <textarea  class="clientInputt text-area" placeholder="Any custom approach, constraints, or specific requirements"></textarea>
+                        <p class="specialMethods">Special methods may incur additional charges reflected in the final quotation.</p>
+                    </div>
+
+                    </div>
+
+                    
+                </div>
+    
+                <div class="client-info2">
+                    <div class="client-info-title">
+                        <div class="num">05</div>
+                        <p class="client-title">PAYMENT INFORMATION</p>
+                    </div>
+                    
+                    <div class="payment-box">
+                        <p class="how-it-works">HOW IT WORKS</p>
+
+                        <div class="payment-step">
+                            <div class="numPay">01</div>
+                            <div class="step-content">
+                                <p class="step-title">SUBMIT THE FORM</p>
+                                <p class="step-desc">Your briefing is encrypted and sent to the agency for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">02</div>
+                            <div class="step-content">
+                                <p class="step-title">AGENCY REVIEWS</p>
+                                <p class="step-desc">Target classification, urgency, and operational risk are assessed. Unknown targets evaluated at stated fee.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">03</div>
+                            <div class="step-content">
+                                <p class="step-title">OFFICIAL QUOTATION SENT</p>
+                                <p class="step-desc">You receive a <strong><font style="color: #D4A8A2;">Mission Approved — Final Quote</font></strong> with total cost and 50% downpayment amount.</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">04</div>
+                            <div class="step-content">
+                                <p class="step-title">50% DOWNPAYMENT</p>
+                                <p class="step-desc">Mission preparation begins only after payment is received.</p>
+                                <div class="payment-methods">
+                                    <span>CASH</span>
+                                    <span>BANK TRANSFER</span>
+                                    <span>GCASH</span>
+                                    <span>PAYPAL</span>
+                                    <span>CRYPTO</span>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="payment-step">
+                            <div class="numPay">05</div>
+                            <div class="step-content">
+                                <p class="step-title">REMAINING 50% ON COMPLETION</p>
+                                <p class="step-desc">Collected before report delivery or any results are released.</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext" required>I understand that payment is required before mission preparation begins <span class="required">*</span></span>
+                </div>
+
+                <div class="Twoclient-info">
+                    <div class="client-info-title">
+                        <div class="num">06</div>
+                        <p class="client-title">TERMS & CONDITIONS</p>
+                    </div>
+                    
+                    <div class="confirmation-box">
+                        <div><input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext">I understand that the agency reserves the right to refuse or modify any mission
+                            request without stated reason <span class="required">*</span></span></div>
+                        <div><input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext">I confirm that all information provided is accurate to the best of my knowledge  <span class="required">*</span></span></div>
+                        <div><input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext">I agree to keep all mission details, operative identities, and agency communications
+                            strictly confidential <span class="required">*</span></span></div>
+                        <div><input type="checkbox" id="payment-checkbox" class="tickbox" required><span class="paymenttext">I understand that evaluation fees, if applicable, are non-refundable regardless of
+                            mission approval outcome  <span class="required">*</span></span></div>
+                    </div>
+
+                        
+                </div>
+
+                <div class="submit-section" >
+                    <button type="submit" class="submit-btn" data-prefix="REP">
+                        TRANSMIT REAPEAR BRIEFING &nbsp;&#8594;
+                    </button>
+                    <p class="submit-note">You will be contacted via your provided email within 24–48 hours.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </form>    
+</div>
+
+
+    <div id="success-section" style="display:none;">
+            
+        <div class="success-wrap">
+            
+            <p class="confirmed-title">TRANSMISSION CONFIRMED</p>
+            <p class="case-id">CASE ID: <span id="caseId"></span></p>
+
+            <hr class="divider">
+
+            <ul class="status-lines">
+                <li class="status-line" id="s1">
+                    <span class="check">&#10003;</span>
+                    <span class="label">ENCRYPTION:</span>
+                    <span class="val">ACTIVE</span>
+                </li>
+                <li class="status-line" id="s2">
+                    <span class="check">&#10003;</span>
+                    <span class="label">BRIEFING:</span>
+                    <span class="val">RECEIVED</span>
+                </li>
+                <li class="status-line" id="s3">
+                    <span class="check">&#10003;</span>
+                    <span class="label">AGENT ASSIGNED:</span>
+                    <span class="val">PENDING</span>
+                </li>
+            </ul>
+
+            <hr class="divider">
+            <p class="note">You will be contacted via your provided email within 24–48 hours.</p>
+            <button class="return-btn"><a href="clocked.html">← RETURN TO HOME</a></button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
